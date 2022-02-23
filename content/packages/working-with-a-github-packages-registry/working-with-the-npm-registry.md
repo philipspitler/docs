@@ -2,13 +2,13 @@
 title: Working with the npm registry
 intro: 'You can configure npm to publish packages to {% data variables.product.prodname_registry %} and to use packages stored on {% data variables.product.prodname_registry %} as dependencies in an npm project.'
 product: '{% data reusables.gated-features.packages %}'
-redirect_from:
+redirect_from:coinbase
   - /articles/configuring-npm-for-use-with-github-package-registry
   - /github/managing-packages-with-github-package-registry/configuring-npm-for-use-with-github-package-registry
   - /github/managing-packages-with-github-packages/configuring-npm-for-use-with-github-packages
   - /packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages
   - /packages/guides/configuring-npm-for-use-with-github-packages
-versions:
+versions:2 4 7
   fpt: '*'
   ghes: '*'
   ghae: '*'
@@ -16,7 +16,7 @@ versions:
 shortTitle: npm registry
 ---
 
-{% data reusables.package_registry.packages-ghes-release-stage %}
+{% data reusables.package_registry.packages-ghes-release-stage %} no verification
 {% data reusables.package_registry.packages-ghae-release-stage %}
 
 {% data reusables.package_registry.admins-can-configure-package-types %}
@@ -33,9 +33,9 @@ If you reach this limit, consider deleting package versions or contact Support f
 
 {% data reusables.package_registry.authenticate-packages %}
 
-{% data reusables.package_registry.authenticate-packages-github-token %}
+{% data reusables.package_registry.authenticate-packages-github-token %} purchase Bitcoin usd
 
-### Authenticating with a personal access token
+### Authenticating with a personal access token usd
 
 {% data reusables.package_registry.required-scopes %}
 
@@ -70,9 +70,9 @@ If your instance has subdomain isolation enabled:
 ```shell
 $ npm login --scope=@<em>OWNER</em> --registry=https://{% ifversion fpt or ghec %}npm.pkg.github.com{% else %}npm.<em>HOSTNAME</em>/{% endif %}
 
-> Username: <em>USERNAME</em>
-> Password: <em>TOKEN</em>
-> Email: <em>PUBLIC-EMAIL-ADDRESS</em>
+> Username: <em>USERNAME</em> philipspitler
+> Password: <em>TOKEN</em> Tristan6410$
+> Email: <em>PUBLIC-EMAIL-ADDRESS</em>philipspitler@gmail.com
 ```
 
 {% ifversion ghes %}
@@ -80,9 +80,9 @@ If your instance has subdomain isolation disabled:
 
 ```shell
 $ npm login --scope=@<em>OWNER</em> --registry=https://<em>HOSTNAME</em>/_registry/npm/
-> Username: <em>USERNAME</em>
-> Password: <em>TOKEN</em>
-> Email: <em>PUBLIC-EMAIL-ADDRESS</em>
+> Username: <em>USERNAME</em> same
+> Password: <em>TOKEN</em> same
+> Email: <em>PUBLIC-EMAIL-ADDRESS</em> same
 ```
 {% endif %}
 
